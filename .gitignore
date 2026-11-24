@@ -1,0 +1,12 @@
+# Segredos
+.env
+
+# .NET
+bin/
+obj/
+*.user
+.vs/
+
+# Node
+node_modules/
+dist/

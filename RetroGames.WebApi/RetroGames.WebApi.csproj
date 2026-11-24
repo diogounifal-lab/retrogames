@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DotNetEnv" Version="3.1.1" />
+    <PackageReference Include="FluentValidation" Version="12.1.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.0" />
+    <!-- Se o restore reclamar da versão, rode: dotnet add RetroGames.WebApi package Swashbuckle.AspNetCore.SwaggerUI -->
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="*" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RetroGames.Model\RetroGames.Model.csproj" />
+    <ProjectReference Include="..\RetroGames.Repository\RetroGames.Repository.csproj" />
+    <ProjectReference Include="..\RetroGames.Services\RetroGames.Services.csproj" />
+    <ProjectReference Include="..\RetroGames.WebApi.ApiModels\RetroGames.WebApi.ApiModels.csproj" />
+  </ItemGroup>
+</Project>
